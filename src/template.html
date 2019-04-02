@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  
+  <link rel="manifest" href="manifest.json">
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./clock-lib/bootstrap-clockpicker.min.css">
+  <link rel="stylesheet" type="text/css" href="./clock-lib/jquery-clockpicker.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/bootstrap-datepicker.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/bootstrap-datepicker.min.css.map">
+  <link rel="stylesheet" type="text/css" href="./css/mystyles.css">
+</head>
+
+<body>
+  <form id="formulario">
+    <div class="container">
+      <button id="nueva-operacion" class="btn dos-col">Nueva Operación</button>
+      <div></div>
+      <div></div>
+      <p class="derecha">Salida</p>
+      <input type="number" class="form-control" placeholder="kms salida" id="kms-salida">
+      <div class="input-group clockpicker">
+        <input class="form-control" id="hora-salida" value="" placeholder="Hora de Salida" readonly="true">
+        <!-- <span class="input-group-addon">
+          <span class="glyphicon glyphicon-time"></span>
+        </span> -->
+      </div>
+      <input type="input" type="text" class="datepicker" id="fecha-salida" placeholder="Fecha de Salida" readonly="true">
+      <!--  -->
+      <p class="dos-col centrado">Salida de España</p>
+      <div class="input-group clockpicker">
+        <input class="form-control" id="hora-salida-es" value="" placeholder="Hora" readonly="true">
+        <!-- <span class="input-group-addon">
+          <span class="glyphicon glyphicon-time"></span>
+        </span> -->
+      </div>
+      <input type="input" type="text" class="datepicker" id="fecha-salida-es" placeholder="Salida de España" readonly="true">
+      <!--  -->
+      <p class="dos-col centrado">Llegada a España</p>
+      <div class="input-group clockpicker">
+        <input class="form-control" id="hora-llegada-es" value="" placeholder="Hora" readonly="true">
+        <!-- <span class="input-group-addon">
+          <span class="glyphicon glyphicon-time"></span>
+        </span> -->
+      </div>
+      <input type="input" type="text" class="datepicker" id="fecha-llegada-es" placeholder="Llegada a España" readonly="true">
+      <!--  -->
+      <p class="derecha">Llegada</p>
+      <input type="number" class="form-control" placeholder="kms llegada" id="kms-llegada">
+      <div class="input-group clockpicker">
+        <input class="form-control" id="hora-llegada" value="" placeholder="Hora de Llegada" readonly="true">
+        <!-- <span class="input-group-addon">
+          <span class="glyphicon glyphicon-time"></span>
+        </span> -->
+      </div>
+      <input type="input" type="text" class="datepicker" id="fecha-llegada" placeholder="Fecha de Llegada" readonly="true">
+      <h5 id="resultados" class="dos-col derecha dat"></h5>
+      <!-- <h5 id="resultados-variable" class="dos-col derecha dat"></h5> -->
+      <h5 id="aKms" class="dos-col derecha oculta dat"></h5>
+      <h5 id="info" class="dos-col derecha oculta dat"></h5>
+      <h5 class="derecha oculta dat">Ajuste mensualidad </h5>
+      <select class="form-control oculta dat" id="mensualidad">
+        <option id='10000'> de hasta 10000 kms</option>
+        <option id='11000'> con 11000 kms</option>
+        <option id='12000'> con 12000 kms</option>
+        <option id='13000'> con 13000 kms</option>
+        <option id='14000'> con 14000 kms</option>
+        <option id='15000'> con 15000 kms</option>
+      </select>
+      <h5 class="derecha oculta dat">Ajuste sólo por kms </h5>
+      <select class="form-control oculta dat" id="precioparticular">
+        <option id='0.11'>11.0 cts/kms</option>
+        <option id='0.111'>11.1 cts/kms</option>
+        <option id='0.112'>11.2 cts/kms</option>
+        <option id='0.113'>11.3 cts/kms</option>
+        <option id='0.114'>11.4 cts/kms</option>
+        <option id='0.115'>11.5 cts/kms</option>
+        <option id='0.116'>11.6 cts/kms</option>
+        <option id='0.117'>11.7 cts/kms</option>
+        <option id='0.118'>11.8 cts/kms</option>
+        <option id='0.119'>11.9 cts/kms</option>
+        <option id='0.12'>12.0 cts/kms</option>
+      </select>
+    </div>
+  </form>
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/bootstrap-datepicker.min.js"></script>
+</body>
+
+</html>

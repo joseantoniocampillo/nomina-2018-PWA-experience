@@ -1,0 +1,29 @@
+{
+    "short_name": "Calculadora de Dietas",
+    "name": "Calculadora de Dietas",
+    "icons": [{
+            "src": "icon/icono-estandar.png",
+            "type": "image/png",
+            "sizes": "152x152"
+        },
+        {
+            "src": "icon/icono-estandar.png",
+            "type": "image/png",
+            "sizes": "144x144"
+        },
+        {
+            "src": "icon/icono-estandar.png",
+            "type": "image/png",
+            "sizes": "128x128"
+        },
+        {
+            "src": "icon/icono-estandar.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        }
+    ],
+    "background_color": "#071d31",
+    "theme_color": "#428bca",
+    "display": "standalone",
+    "start_url": "index.html"
+}
